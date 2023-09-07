@@ -1,0 +1,15 @@
+.income {
+    background: rgb(0, 201, 0);
+    color: rgb(1, 87, 1);
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+}
+
+.expense {
+    background: rgb(0, 201, 0);
+    color: rgb(1, 87, 1);
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+}

@@ -6,15 +6,16 @@ function App() {
   let [expense, setExpense] = useState(0);
 
   const addExpense = newExpense => {
-    setExpense([...expenses, newExpense]);
-    console.log(expenses);
+    setExpenses([...expenses, newExpense]);
   }
 
   return (
     <>
       <input type="number" onChange={e => setExpense(e.target.value)} />
-      <button onClick={() => addExpense(addExpense(expense))}>Add Expense</button>
-      <ExpenseTile />
+      <button onClick={() => addExpense(expense)}>Add Expense</button>
+      {expenses.map((curr, i) => {
+        return <ExpenseTile key={i} value={curr} />
+      })}
     </>
   )
 }

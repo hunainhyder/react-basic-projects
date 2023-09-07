@@ -1,5 +1,5 @@
 # Basic React Projects
 Basic React Projects for beginners to start practice react
-- Todo
 - Counter
+- Todo
 - Expense Tracker
