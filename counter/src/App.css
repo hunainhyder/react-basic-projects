@@ -4,16 +4,22 @@
   padding: 2rem;
   text-align: center;
 }
- .danger {
+
+.danger {
   color: red;
   font-size: 20px;
   background: rgba(255, 0, 0, 0.199);
   border: 1px solid red;
   border-radius: 5px;
   padding: 5px;
-  padding-right: 0;
+  display: flex;
 }
 
- #close {
-  text-align: unset;
- }
+.close {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.close:hover {
+  color: rgba(255, 0, 0, 0.623);
+}

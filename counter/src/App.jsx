@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <h1>Counter is set to {count}</h1>
-      {error ? <div className='danger'><span id='close' onClick={setError(false)}>[&times;]</span><p>Cannot decrement below zero</p></div> : ""}
+      {error ? <div className='danger'><p>Cannot decrement below zero </p><p className='close' onClick={() => setError(false)}>[&times;]</p></div> : ""}
       <br />
       <button onClick={handleDecrement}>Decrement</button>
       <button onClick={() => setCount(0)}>Reset</button>
