@@ -23,7 +23,7 @@ function App() {
   }
 
   let handleAddTodo = () => {
-    if (todo.trim() === "") { return; }
+    if (todo.trim() === "") { console.log("Trying to push empty todo"); }
     setTodos([...todos, todo]);
   }
 
